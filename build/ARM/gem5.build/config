@@ -1,0 +1,56 @@
+# BATCH is not set
+M5_BUILD_CACHE=""
+# USE_EFENCE is not set
+HAVE_FENV=y
+HAVE_DEPRECATED_NAMESPACE=y
+
+#
+# Ruby
+#
+RUBY=y
+
+#
+# Ruby protocols
+#
+USE_MULTIPLE_PROTOCOLS=y
+PROTOCOL="CHI"
+# RUBY_PROTOCOL_MOESI_AMD_Base is not set
+# RUBY_PROTOCOL_MESI_Two_Level is not set
+# RUBY_PROTOCOL_MESI_Three_Level is not set
+# RUBY_PROTOCOL_MESI_Three_Level_HTM is not set
+# RUBY_PROTOCOL_MI_example is not set
+# RUBY_PROTOCOL_MOESI_CMP_directory is not set
+# RUBY_PROTOCOL_MOESI_CMP_token is not set
+# RUBY_PROTOCOL_MOESI_hammer is not set
+# RUBY_PROTOCOL_Garnet_standalone is not set
+RUBY_PROTOCOL_CHI=y
+# RUBY_PROTOCOL_MSI is not set
+# end of Ruby protocols
+
+# SLICC_HTML is not set
+NUMBER_BITS_PER_SET=64
+# end of Ruby
+
+HAVE_PROTOBUF=y
+BUILD_ISA=y
+
+#
+# ISA
+#
+USE_ARM_ISA=y
+
+#
+# Fast Model
+#
+# end of Fast Model
+
+# USE_MIPS_ISA is not set
+# USE_POWER_ISA is not set
+# USE_RISCV_ISA is not set
+# USE_SPARC_ISA is not set
+# USE_X86_ISA is not set
+# end of ISA
+
+KVM_ISA=""
+# BUILD_GPU is not set
+# USE_TEST_OBJECTS is not set

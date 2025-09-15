@@ -1,0 +1,398 @@
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for linker -Wl,--as-needed support... 
+build/X86/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_0.cc <-
+  |int main(int, char *[]) { return 0; }
+(B[m [     CXX] [33mX86/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_0[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mX86/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_0_a138c212024f63a3322bebb3fb9b5553(B[m
+ld: unknown options: --as-needed 
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+scons: Configure: no
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for compiler -Wno-c99-designator support... 
+build/X86/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_0.cc <-
+  |// CheckCxxFlag DO NOTHING
+(B[m [     CXX] [33mX86/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_0[33m[1m.cc[34m[1m -> [33m[1m_847143c371a56d00946858b200a7eb3c.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for compiler -Wno-defaulted-function-deleted support... 
+build/X86/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_1.cc <-
+  |// CheckCxxFlag DO NOTHING
+(B[m [     CXX] [33mX86/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_1[33m[1m.cc[34m[1m -> [33m[1m_45a48427ab614912d15112a0437dd4b6.o(B[m
+scons: Configure: yes
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for compiler -gz support... 
+build/X86/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_2.cc <-
+  |// CheckCxxFlag DO NOTHING
+(B[m [     CXX] [33mX86/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_2[33m[1m.cc[34m[1m -> [33m[1m_9328dea263ad5f645d7e50104bc15f26.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for linker -gz support... 
+build/X86/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_1.cc <-
+  |int main(int, char *[]) { return 0; }
+(B[m [     CXX] [33mX86/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_1[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mX86/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_1_f18729afe8988371fa0e715ad905c9e2(B[m
+ld: warning: ignoring duplicate libraries: '-lc++'
+scons: Configure: yes
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for C header file Python.h... 
+build/X86/gem5.build/scons_config/conftest_6f79fff2b5fa95157216534d203df494_0.c <-
+  |
+  |#include <Python.h>
+  |
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_6f79fff2b5fa95157216534d203df494_0[33m[1m.c[34m[1m -> [33m[1m_8c2d4efd07171fff31d2de142d498db6.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking Python version... 
+build/X86/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0.cc <-
+  |
+  |#include <pybind11/embed.h>
+  |
+  |int
+  |main(int argc, char **argv) {
+  |    pybind11::scoped_interpreter guard{};
+  |    pybind11::exec(
+  |        "import sys\n"
+  |        "vi = sys.version_info\n"
+  |        "sys.stdout.write('%i.%i.%i' % (vi.major, vi.minor, vi.micro));\n");
+  |    return 0;
+  |}
+  |    
+(B[m [     CXX] [33mX86/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mX86/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0_a49264de5141b90bec481a9ba55a7d38(B[m
+ld: warning: ignoring duplicate libraries: '-lc++'
+build/X86/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0_a49264de5141b90bec481a9ba55a7d38 > build/X86/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0_a49264de5141b90bec481a9ba55a7d38.out
+scons: Configure: 3.13.7
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for accept(0,0,0) in C++ library None... 
+build/X86/gem5.build/scons_config/conftest_fa6044680a630c4a205df174495c137c_0.cpp <-
+  |
+  |
+  |#include "sys/socket.h"
+  |
+  |int main(void) {
+  |  accept(0,0,0);
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33mX86/gem5.build/scons_config/conftest_fa6044680a630c4a205df174495c137c_0[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mX86/gem5.build/scons_config/conftest_fa6044680a630c4a205df174495c137c_0_2f5da4c5b3bddd2c31b4940b4c35b6b3(B[m
+ld: warning: ignoring duplicate libraries: '-lc++'
+scons: Configure: yes
+
+scons: Configure: Checking for zlibVersion() in C++ library z... 
+build/X86/gem5.build/scons_config/conftest_dc915a928df035c3500ecc014c4c1694_0.cpp <-
+  |
+  |
+  |#include "zlib.h"
+  |
+  |int main(void) {
+  |  zlibVersion();
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33mX86/gem5.build/scons_config/conftest_dc915a928df035c3500ecc014c4c1694_0[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mX86/gem5.build/scons_config/conftest_dc915a928df035c3500ecc014c4c1694_0_c1414e1a0b0e58079dfaf5e89cd94dde(B[m
+ld: warning: ignoring duplicate libraries: '-lc++'
+scons: Configure: yes
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for C library tcmalloc_minimal... 
+build/X86/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_0.c <-
+  |
+  |
+  |
+  |int main(void) {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mX86/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_0_4c85a140b59998e30f060e97dca4a07a(B[m
+ld: library 'tcmalloc_minimal' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+scons: Configure: no
+
+scons: Configure: Checking for C library tcmalloc... 
+build/X86/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_1.c <-
+  |
+  |
+  |
+  |int main(void) {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_1[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mX86/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_1_81159f4b20becc9cad715684c2722627(B[m
+ld: library 'tcmalloc' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+scons: Configure: no
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for pkg-config package protobuf... 
+pkg-config protobuf
+scons: Configure: yes
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for C header file capstone/capstone.h... 
+build/X86/gem5.build/scons_config/conftest_228713437195dd19f42492507090c16d_0.c <-
+  |
+  |#include <capstone/capstone.h>
+  |
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_228713437195dd19f42492507090c16d_0[33m[1m.c[34m[1m -> [33m[1m_c50e56c1cdc92a0c61e5597af1f2bc8a.o(B[m
+build/X86/gem5.build/scons_config/conftest_228713437195dd19f42492507090c16d_0.c:2:10: fatal error: 'capstone/capstone.h' file not found
+    2 | #include <capstone/capstone.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for C header file linux/kvm.h... 
+build/X86/gem5.build/scons_config/conftest_3d4db39b7cb946e659f69394900767da_0.c <-
+  |
+  |#include <linux/kvm.h>
+  |
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_3d4db39b7cb946e659f69394900767da_0[33m[1m.c[34m[1m -> [33m[1m_65e8dcc6cb5720f5942cea6b4bc1629d.o(B[m
+build/X86/gem5.build/scons_config/conftest_3d4db39b7cb946e659f69394900767da_0.c:2:10: fatal error: 'linux/kvm.h' file not found
+    2 | #include <linux/kvm.h>
+      |          ^~~~~~~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for C header file linux/if_tun.h... 
+build/X86/gem5.build/scons_config/conftest_479afe281e6dd1a87a0a74ae5e0195a7_0.c <-
+  |
+  |#include <linux/if_tun.h>
+  |
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_479afe281e6dd1a87a0a74ae5e0195a7_0[33m[1m.c[34m[1m -> [33m[1m_100d7b42044d1beca19bef864bce9621.o(B[m
+build/X86/gem5.build/scons_config/conftest_479afe281e6dd1a87a0a74ae5e0195a7_0.c:2:10: fatal error: 'linux/if_tun.h' file not found
+    2 | #include <linux/if_tun.h>
+      |          ^~~~~~~~~~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for backtrace_symbols_fd((void *)1, 0, 0) in C library None... 
+build/X86/gem5.build/scons_config/conftest_45b7ea2111de8d730f6af4800b419fef_0.c <-
+  |
+  |
+  |#include "execinfo.h"
+  |
+  |int main(void) {
+  |  backtrace_symbols_fd((void *)1, 0, 0);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_45b7ea2111de8d730f6af4800b419fef_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mX86/gem5.build/scons_config/conftest_45b7ea2111de8d730f6af4800b419fef_0_203e72a3fa51a879330490443fe373af(B[m
+scons: Configure: yes
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for C header file fenv.h... 
+build/X86/gem5.build/scons_config/conftest_b63620e7908057d9c68909c7dea2f0c0_0.c <-
+  |
+  |#include <fenv.h>
+  |
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_b63620e7908057d9c68909c7dea2f0c0_0[33m[1m.c[34m[1m -> [33m[1m_62938daa658307d75f40d8a675fc78c8.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C header file png.h... 
+build/X86/gem5.build/scons_config/conftest_6a115e90d1ef31132299ba5de9361ca4_0.c <-
+  |
+  |#include <png.h>
+  |
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_6a115e90d1ef31132299ba5de9361ca4_0[33m[1m.c[34m[1m -> [33m[1m_0c47c527fb8e33ecac50effd33bc5364.o(B[m
+build/X86/gem5.build/scons_config/conftest_6a115e90d1ef31132299ba5de9361ca4_0.c:2:10: fatal error: 'png.h' file not found
+    2 | #include <png.h>
+      |          ^~~~~~~
+1 error generated.
+scons: Configure: no
+
+scons: Configure: Checking for clock_nanosleep(0,0,NULL,NULL) in C library None... 
+build/X86/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_0.c <-
+  |
+  |
+  |#include "time.h"
+  |
+  |int main(void) {
+  |  clock_nanosleep(0,0,NULL,NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+build/X86/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_0.c:6:3: error: call to undeclared function 'clock_nanosleep'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   clock_nanosleep(0,0,NULL,NULL);
+      |   ^
+1 error generated.
+scons: Configure: no
+
+scons: Configure: Checking for clock_nanosleep(0,0,NULL,NULL) in C library rt... 
+build/X86/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_1.c <-
+  |
+  |
+  |#include "time.h"
+  |
+  |int main(void) {
+  |  clock_nanosleep(0,0,NULL,NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_1[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+build/X86/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_1.c:6:3: error: call to undeclared function 'clock_nanosleep'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   clock_nanosleep(0,0,NULL,NULL);
+      |   ^
+1 error generated.
+scons: Configure: no
+
+scons: Configure: Checking for C header file valgrind/valgrind.h... 
+build/X86/gem5.build/scons_config/conftest_fc44fbdd5cf1cbd0f4445fc96a17746b_0.c <-
+  |
+  |#include "valgrind/valgrind.h"
+  |
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_fc44fbdd5cf1cbd0f4445fc96a17746b_0[33m[1m.c[34m[1m -> [33m[1m_cf3a0545773c94ed9f04bcd09ce55dbc.o(B[m
+build/X86/gem5.build/scons_config/conftest_fc44fbdd5cf1cbd0f4445fc96a17746b_0.c:2:10: fatal error: 'valgrind/valgrind.h' file not found
+    2 | #include "valgrind/valgrind.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+build/X86/gem5.build/scons_config/conftest_5a5d5db21b8c0c10baa6ac0764f01dca_0.cc <-
+  |
+  |            int main() {return 0;}
+  |            namespace [[gnu::deprecated("Test namespace deprecation")]]
+  |            test_deprecated_namespace {}
+  |        
+(B[m [     CXX] [33mX86/gem5.build/scons_config/conftest_5a5d5db21b8c0c10baa6ac0764f01dca_0[33m[1m.cc[34m[1m -> [33m[1m_e4611022f0f9087d73f6e742120aaa49.o(B[m
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for pkg-config package hdf5-serial... 
+pkg-config hdf5-serial
+scons: Configure: no
+
+scons: Configure: Checking for pkg-config package hdf5... 
+pkg-config hdf5
+scons: Configure: no
+
+scons: Configure: Checking for H5Fcreate("", 0, 0, 0) in C library hdf5... 
+build/X86/gem5.build/scons_config/conftest_405a27e3c1c4653876e1e3238e8ed875_0.c <-
+  |
+  |
+  |#include "hdf5.h"
+  |
+  |int main(void) {
+  |  H5Fcreate("", 0, 0, 0);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_405a27e3c1c4653876e1e3238e8ed875_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+build/X86/gem5.build/scons_config/conftest_405a27e3c1c4653876e1e3238e8ed875_0.c:3:10: fatal error: 'hdf5.h' file not found
+    3 | #include "hdf5.h"
+      |          ^~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking for shm_open("/test", 0, 0) in C library None... 
+build/X86/gem5.build/scons_config/conftest_b4e440fe1099a7d4a124ee9f6c6af6d9_0.c <-
+  |
+  |
+  |#include "sys/mman.h"
+  |
+  |int main(void) {
+  |  shm_open("/test", 0, 0);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_b4e440fe1099a7d4a124ee9f6c6af6d9_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mX86/gem5.build/scons_config/conftest_b4e440fe1099a7d4a124ee9f6c6af6d9_0_f020e90b5f60ef08b319e176c29310eb(B[m
+scons: Configure: yes
+
+
+file /Users/unique/Documents/UCumberlands/Archirecture/gem5/site_scons/gem5_scons/configure.py,line 173:
+	Configure(confdir = build/X86/gem5.build/scons_config)
+scons: Configure: Checking whether __i386__ is declared... 
+build/X86/gem5.build/scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0.c <-
+  |
+  |int main(void)
+  |{
+  |#ifndef __i386__
+  |    (void) __i386__;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0[33m[1m.c[34m[1m -> [33m[1m_80781f0111b8e7b8e8a2c246cfda3332.o(B[m
+build/X86/gem5.build/scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0.c:5:12: error: use of undeclared identifier '__i386__'
+    5 |     (void) __i386__;
+      |            ^
+1 error generated.
+scons: Configure: no
+
+scons: Configure: Checking whether __x86_64__ is declared... 
+build/X86/gem5.build/scons_config/conftest_fc5c667aeab98cc869c22ec2d558eb9d_0.c <-
+  |
+  |int main(void)
+  |{
+  |#ifndef __x86_64__
+  |    (void) __x86_64__;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+(B[m [      CC] [33mX86/gem5.build/scons_config/conftest_fc5c667aeab98cc869c22ec2d558eb9d_0[33m[1m.c[34m[1m -> [33m[1m_a9bfa567ed6e43c3a84357ea8e08c534.o(B[m
+build/X86/gem5.build/scons_config/conftest_fc5c667aeab98cc869c22ec2d558eb9d_0.c:5:12: error: use of undeclared identifier '__x86_64__'
+    5 |     (void) __x86_64__;
+      |            ^
+1 error generated.
+scons: Configure: no
+
+
